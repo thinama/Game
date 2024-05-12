@@ -1,0 +1,66 @@
+<!-- res/layout/activity_easy.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4169e1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/highscoreid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Highest Score: 0"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+    <!-- Score TextView -->
+    <TextView
+        android:id="@+id/scoreid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/highscoreid"
+        android:layout_marginTop="20dp"
+        android:text="SCORE: 0"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!-- Restart Button -->
+    <Button
+        android:id="@+id/restartid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#512DA8"
+        android:onClick="Restart"
+        android:text="RESTART!"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Return to Menu Button -->
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restartid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#FBC02D"
+        android:onClick="Reachmenu"
+        android:text="Return to Menu"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Add any other UI elements specific to the easy level here -->
+
+</RelativeLayout>
